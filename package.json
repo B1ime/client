@@ -1,11 +1,17 @@
 {
-  "name": "jimin",
+  "name": "1013",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.1.3",
+    "iquery": "0.0.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "tether": "^1.4.5"
   },
   "scripts": {
     "start": "react-scripts start",

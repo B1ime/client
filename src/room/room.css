@@ -1,0 +1,66 @@
+.all{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#num{
+    width:48%;
+    float:left;
+    
+}
+#time{
+    float:right;
+    margin-left:4%;
+    width:48%;
+}
+
+#map{
+    border: 1px solid black;
+    width:100%;
+    height:190px;
+}
+.box{
+    width: 100%;
+    height:120px;
+    background-color: skyblue;
+}
+.room-list{
+    width:85%;
+    margin-top:30px;
+    margin-left:10%;
+    margin-right:10%;
+    border-style:black;
+
+}
+#room1{
+    width:45%;
+    height:140px;
+    border: 1px solid;
+    float:left;
+
+}
+#room2{
+    width:45%;
+    height:140px;
+    border: 1px solid;
+    float:left;
+    margin-left: 10px;
+
+}#room3{
+    width:45%;
+    height:140px;
+    border: 1px solid;
+    float:left;
+    margin-top: 10px;
+
+}
+#new{
+    width:45%;
+    height:140px;
+    border: 1px dotted;
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
