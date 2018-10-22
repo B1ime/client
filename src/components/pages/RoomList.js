@@ -6,7 +6,6 @@ import './Pages.css';
 //room의 개수가 0일 때는 리스트 페이지에 방 추가하는 칸만 나타난다.
 
 class List extends Component {
-
   render() {
     const { name, num, location, onRemove } = this.props;
 
@@ -27,7 +26,8 @@ class List extends Component {
           <Room />
         </div>
       </div>
-    )
+    );
   }
 }
+
 export default List;

@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
 import './Components.css';
 
-
 class Form extends Component {
-
   render() {
     return (
       <div>
         <div className="name">
           <label>방 이름</label>
           <p>우리 팀을 알릴 수 있는 이름을 지어보세요! (10자 이내)</p>
-          <input type="ㅜname" onChange={this.handleNameChange} className="form-control" placeholder="방 이름" />
+          <input
+            type="name"
+            onChange={this.handleNameChange}
+            className="form-control"
+            placeholder="방 이름"
+          />
         </div>
         <div className="numandtime">
           <div className="num">
             <label>참여인원</label>
             <p>최대 10명까지 가능해요.</p>
             <div className="selectNum">
-              <select onChange={this.handleNumChange} >
-                <option selected value="1">1명</option>
+              <select onChange={this.handleNumChange}>
+                <option selected value="1">
+                  1명
+                </option>
                 <option value="2">2명</option>
                 <option value="3">3명</option>
                 <option value="4">4명</option>
@@ -35,12 +40,16 @@ class Form extends Component {
             <label>약속시간</label>
             <p>언제가 좋을까요?</p>
             <div className="selectTime">
-              <select id="ampm" onChange={this.handleNumChange} >
-                <option selected value="am">오전</option>
+              <select id="ampm" onChange={this.handleNumChange}>
+                <option selected value="am">
+                  오전
+                </option>
                 <option value="pm">오후</option>
               </select>
-              <select id="hour" onChange={this.handleNumChange} >
-                <option selected value="1">1시</option>
+              <select id="hour" onChange={this.handleNumChange}>
+                <option selected value="1">
+                  1시
+                </option>
                 <option value="2">2시</option>
                 <option value="3">3시</option>
                 <option value="4">4시</option>
@@ -53,8 +62,10 @@ class Form extends Component {
                 <option value="11">11시</option>
                 <option value="12">12시</option>
               </select>
-              <select id="minute" onChange={this.handleNumChange} >
-                <option selected value="0">00분</option>
+              <select id="minute" onChange={this.handleNumChange}>
+                <option selected value="0">
+                  00분
+                </option>
                 <option value="5">05분</option>
                 <option value="10">10분</option>
                 <option value="15">15분</option>
@@ -71,10 +82,8 @@ class Form extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-
-
-export default Form
+export default Form;

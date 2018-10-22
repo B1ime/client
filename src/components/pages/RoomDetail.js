@@ -3,9 +3,7 @@ import { Navbar, Member, Map } from '../../components';
 import './Pages.css';
 import participate from '../../images/participate.png';
 
-
 class RoomDetail extends Component {
-
   render() {
     return (
       <div>
@@ -17,7 +15,9 @@ class RoomDetail extends Component {
             <Member />
             <Member />
           </div>
-          <button id="participate" type="submit"><img src={participate} alt="참여하기"></img></button>
+          <button id="participate" type="submit">
+            <img src={participate} alt="참여하기" />
+          </button>
         </div>
       </div>
     );

@@ -1,22 +1,19 @@
+// eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// eslint-disable-next-line no-unused-vars
 import { Route } from 'react-router-dom';
 import { Login, Main, RoomCreate, RoomDetail, RoomList } from './pages';
-
-const Wrapper = styled.div`
-
-`;
 
 class App extends Component {
   render() {
     return (
-      <Wrapper>
+      <div className="App">
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Main} />
         <Route path="/roomCreate" component={RoomCreate} />
         <Route path="/list" component={RoomList} />
         <Route path="/detail" component={RoomDetail} />
-      </Wrapper>
+      </div>
     );
   }
 }
