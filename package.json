@@ -39,7 +39,6 @@
   ],
   "devDependencies": {
     "@storybook/cli": "^3.4.11",
-   
     "prettier": "^1.14.3",
     "@storybook/react": "^3.4.11",
     "@storybook/addon-actions": "^3.4.11",

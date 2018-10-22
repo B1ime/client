@@ -4,12 +4,14 @@ import './Components.css';
 
 
 const Map = () => {
-    return (
-        <div className="map">
+  return (
+    <div className="map">
+    </div>
 
 
-        </div>
-    )
+
+
+  )
 }
 
 export default Map;
