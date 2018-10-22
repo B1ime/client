@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './container.css';
 
 class Main extends Component {
   render() {
     return (
       <div className="second">
         <div className="center">
-          <Link to="/form">
+          <Link to="/roomCreate">
             <div className="new-room">
               새로운 모임을 만들었다면?
               <p>방만들기</p>
