@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import MainLayout from '../templates/MainLayout';
 import { Link } from 'react-router-dom';
 
 class Main extends Component {
   render() {
     return (
       <div className="second">
+        <MainLayout />
         <div className="center">
           <Link to="/roomCreate">
             <div className="new-room">
