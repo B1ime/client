@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Paragraph } from '../atoms';
 
 const LoginButton = styled.div`
   display: flex;
@@ -21,23 +22,12 @@ const ProviderImage = styled.img`
   object-fit: contain;
 `;
 
-const LoginParagraph = styled.p`
-  font-family: NotoSansCJKkr;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #ffffff;
-`;
-
 const LoginElement = ({ imageSource, provider, onLogin }) => (
   <LoginButton onClick={onLogin}>
     <ProviderImage src={imageSource} alt="kakao-login" />
-    <LoginParagraph>
+    <Paragraph size={1.2} lineHeight={1.5} color="#ffffff">
       Login with <strong>{provider}</strong>
-    </LoginParagraph>
+    </Paragraph>
   </LoginButton>
 );
 

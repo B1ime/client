@@ -16,7 +16,7 @@ const Image = styled.img`
 
 const AppLabel = () => (
   <Wrapper>
-    <Image src={LabelImage} className="Ellipse-1-copy" />
+    <Image src={LabelImage} alt="app-icon" />
   </Wrapper>
 );
 

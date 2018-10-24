@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+html {
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
