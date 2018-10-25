@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import { FullHeightWrapper } from '../atoms/Wrappers';
 import { LoginLayout } from '../templates';
-import { Link } from 'react-router-dom';
 
 class Login extends Component {
   render() {
     return (
-      <div className="login-page">
+      <FullHeightWrapper className="login-page">
         <LoginLayout />
-      </div>
+      </FullHeightWrapper>
     );
   }
 }

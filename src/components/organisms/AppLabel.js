@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import LabelImage from './AppIcon.png';
+import LabelImage from './images/AppIcon.png';
 
 const Wrapper = styled.div`
-  margin: 104px auto 133px auto;
+  margin: 0 auto;
+  padding-top: 38.89%;
+  padding-bottom: 29.69%;
 `;
 
 const Image = styled.img`
   display: inherit;
   margin: 0 auto;
-  width: 172px;
-  height: 149px;
+  width: 38.9%;
   object-fit: contain;
 `;
 

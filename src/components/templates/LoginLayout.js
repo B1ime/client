@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
-import { executeLogin } from '../../actions/login/actions';
 
-import { AppLabel, LoginSection, Footer } from '../organisms';
-
-const Wrapper = styled.div``;
+import { AppLabel, LoginSection } from '../organisms';
 
 class LoginLayout extends Component {
   static propTypes = {
@@ -17,14 +13,13 @@ class LoginLayout extends Component {
   render() {
     const { onGoogleLogin, onKakaoLogin } = this.props;
     return (
-      <Wrapper>
+      <Fragment>
         <AppLabel />
         <LoginSection
           onGoogleLogin={onGoogleLogin}
           onKakaoLogin={onKakaoLogin}
         />
-        <Footer />
-      </Wrapper>
+      </Fragment>
     );
   }
 }

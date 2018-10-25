@@ -1,8 +1,17 @@
+import RoomDetailNavbar from './RoomDetailNavbar';
+import RoomListSection from './RoomListSection';
 import IntroSection from './IntroSection';
 import AppLabel from './AppLabel';
-import Footer from './Footer';
 import LoginSection from './LoginSection';
+import RoomMap from './RoomMap';
+import RoomMemberSection from './RoomMemberSection';
 
 export {
-  AppLabel, Footer, LoginSection, IntroSection,
+  AppLabel,
+  LoginSection,
+  IntroSection,
+  RoomListSection,
+  RoomDetailNavbar,
+  RoomMap,
+  RoomMemberSection,
 };

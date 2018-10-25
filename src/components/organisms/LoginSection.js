@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { LoginElement } from '../molecules';
-import KakaoLogin from './KakaoLogin.png';
-import GoogleLogin from './GoogleLogin.png';
+import KakaoLogin from './images/KakaoLogin.png';
+import GoogleLogin from './images/GoogleLogin.png';
 
 const LoginSection = ({ onGoogleLogin, onKakaoLogin }) => (
   <div className="login-section">

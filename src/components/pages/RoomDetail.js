@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import { Navbar, Member, Map } from '../../components';
+import PropTypes from 'prop-types';
+import { FullScreenWrapper } from '../atoms/Wrappers';
+import { RoomDetailLayout } from '../templates';
 import './Pages.css';
-import participate from '../../images/participate.png';
 
 class RoomDetail extends Component {
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        slug: PropTypes.node,
+      }).isRequired,
+    }).isRequired,
+  };
+
   render() {
+    const { match } = this.props;
     return (
-      <div>
-        <Navbar title="room detail" />
-        <div className="roomDetail">
-          <Map />
-          <div className="memberList">
-            <p>클릭하면 지도에서 위치를 확인할 수 있어요</p>
-            <Member />
-            <Member />
-          </div>
-          <button id="participate" type="submit">
-            <img src={participate} alt="참여하기" />
-          </button>
-        </div>
-      </div>
+      <FullScreenWrapper>
+        <RoomDetailLayout roomName={match.params.slug} />
+      </FullScreenWrapper>
     );
   }
 }

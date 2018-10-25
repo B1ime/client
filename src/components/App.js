@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { Route } from 'react-router-dom';
+import { FullScreenWrapper } from './atoms/Wrappers';
 import {
   Login, Main, RoomCreate, RoomDetail, RoomList,
 } from './pages';
 
-const Wrapper = styled.div`
-  height: 100%;
-  width: 100%;
-`;
-
 class App extends Component {
   render() {
     return (
-      <Wrapper className="App">
+      <FullScreenWrapper className="App">
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Main} />
-        <Route path="/roomCreate" component={RoomCreate} />
-        <Route path="/list" component={RoomList} />
-        <Route path="/detail" component={RoomDetail} />
-      </Wrapper>
+        <Route exact path="/rooms/create" component={RoomCreate} />
+        <Route exact path="/rooms" component={RoomList} />
+        <Route exact path="/rooms/:slug" component={RoomDetail} />
+      </FullScreenWrapper>
     );
   }
 }

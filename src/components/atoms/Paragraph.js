@@ -9,6 +9,7 @@ const Paragraph = styled.p`
   font-stretch: normal;
   line-height: ${props => props.lineHeight};
   letter-spacing: normal;
+  text-align: ${props => props.align};
   color: ${props => props.color};
 `;
 
@@ -17,6 +18,7 @@ Paragraph.defaultProps = {
   padding: 0,
   fontSize: 1.2,
   fontWeight: 'normal',
+  align: 'left',
   color: '#000000',
 };
 
