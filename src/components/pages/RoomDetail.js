@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FullScreenWrapper } from '../atoms/Wrappers';
 import { RoomDetailLayout } from '../templates';
-import './Pages.css';
 
 class RoomDetail extends Component {
   static propTypes = {

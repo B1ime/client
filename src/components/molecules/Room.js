@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import profile from './images/Profile.png';
 import { Paragraph } from '../atoms';
-import '../Components.css';
 
 const Wrapper = styled.div`
   display: block;
